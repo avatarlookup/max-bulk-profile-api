@@ -20,13 +20,13 @@ This is the official AvatarLookup example repository for **one** bulk product, `
 
 | Column | Example | Meaning |
 |---|---|---|
-| `number` | `17253100591` |  |
-| `activated` | `yes` |  |
-| `id` | `52028987` |  |
-| `name` | `Alex Kim` |  |
-| `last_seen` | `unknown` |  |
-| `avatar` | `https://i.oneme.ru/i?r=example` |  |
-| `gender` | `male` |  |
+| `number` | `17253100591` | The submitted number, exactly as it appeared in your file. |
+| `activated` | `yes` | Whether the number is registered on MAX. |
+| `id` | `52028987` | Account id on the platform. |
+| `name` | `Alex Kim` | Public display name on the profile. |
+| `last_seen` | `unknown` | The most recent online time observed. |
+| `avatar` | `https://i.oneme.ru/i?r=example` | Avatar URL. |
+| `gender` | `male` | Gender estimated from the avatar. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 

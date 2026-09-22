@@ -42,37 +42,37 @@
     {
       "name": "number",
       "example": "17253100591",
-      "description": ""
+      "description": "The submitted number, exactly as it appeared in your file."
     },
     {
       "name": "activated",
       "example": "yes",
-      "description": ""
+      "description": "Whether the number is registered on MAX."
     },
     {
       "name": "id",
       "example": "52028987",
-      "description": ""
+      "description": "Account id on the platform."
     },
     {
       "name": "name",
       "example": "Alex Kim",
-      "description": ""
+      "description": "Public display name on the profile."
     },
     {
       "name": "last_seen",
       "example": "unknown",
-      "description": ""
+      "description": "The most recent online time observed."
     },
     {
       "name": "avatar",
       "example": "https://i.oneme.ru/i?r=example",
-      "description": ""
+      "description": "Avatar URL."
     },
     {
       "name": "gender",
       "example": "male",
-      "description": ""
+      "description": "Gender estimated from the avatar."
     }
   ],
   "statuses": [
