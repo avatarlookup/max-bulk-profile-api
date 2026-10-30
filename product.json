@@ -1,5 +1,5 @@
 {
-  "name": "MAX Bulk Number Profile",
+  "name": "MAX bulk number profile",
   "brand": "AvatarLookup",
   "repository": "avatarlookup/max-bulk-profile-api",
   "description": "Upload numbers and download the MAX profile data, avatar included.",
@@ -31,7 +31,7 @@
   },
   "limits": {
     "min_items": 1000,
-    "max_items": 100000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,39 +40,29 @@
   },
   "result_fields": [
     {
-      "name": "number",
-      "example": "17253100591",
-      "description": "The submitted number, exactly as it appeared in your file."
+      "name": "identifier",
+      "example": "12345678900",
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
       "name": "activated",
-      "example": "yes",
-      "description": "Whether the number is registered on MAX."
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
-      "name": "id",
-      "example": "52028987",
-      "description": "Account id on the platform."
+      "name": "uid",
+      "example": "343064807",
+      "description": "Platform user ID when available."
     },
     {
-      "name": "name",
-      "example": "Alex Kim",
-      "description": "Public display name on the profile."
-    },
-    {
-      "name": "last_seen",
-      "example": "unknown",
-      "description": "The most recent online time observed."
-    },
-    {
-      "name": "avatar",
+      "name": "avatar_url",
       "example": "https://i.oneme.ru/i?r=example",
-      "description": "Avatar URL."
+      "description": "Public avatar URL when available; an empty value does not reveal a private image."
     },
     {
       "name": "gender",
       "example": "male",
-      "description": "Gender estimated from the avatar."
+      "description": "Gender presentation estimated from the avatar."
     }
   ],
   "statuses": [
@@ -83,5 +73,5 @@
   "pricing_url": "https://avatarlookup.com/pricing",
   "maintainer": "AvatarLookup",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
